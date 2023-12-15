@@ -7,7 +7,7 @@
    -  Tên đề tài đã được thống nhất: Bùm Bùm
 
 ## 2. Công nghệ sử dụng
-## 2.1 Godot Engine 4.2
+### 2.1 Godot Engine 4.2
    Godot Engine là một trình làm game mã nguồn mở, mạnh mẽ và linh hoạt, hỗ trợ nhiều nền tảng như Windows, macOS, Linux, Android, iOS và nhiều hơn nữa. Nó cung cấp một trình chỉnh sửa trực quan, hệ thống lập trình script linh hoạt (bao gồm GDScript, một ngôn ngữ lập trình riêng của Godot), và hỗ trợ đa dạng cho nhiều loại game và ứng dụng tương tác khác nhau.
 
 ## 2.2. Godot Engine Built-in FileSystem
