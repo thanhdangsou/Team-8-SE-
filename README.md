@@ -36,7 +36,7 @@ nổ theo hình chữ thập với kích thước mặc định là 3x3 block, c
 b) Vật phẩm hỗ trợ:
 - Tăng số lượng bom: +1 số lượng bom đang có. chỉ có thể đặt được x số bom đang có 1 lúc.
 - Tăng độ dài bom nổ: tăng thêm +1 dộ dài bom nổ. VD: 3x3 → 4x4,...
-- Chạy nhanh: tăng tốc độ di chuyển của người chơi trong thời gian ngắn 
+- Giày: tăng tốc độ di chuyển của người chơi 
 - Tăng mạng: +1 số mạng đang có. Tối đa 4 mạng
 - Lá chắn: tạo một lá chắn miễn nhiễm 1 lần sát thương sẽ nhận
 
