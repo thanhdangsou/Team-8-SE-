@@ -43,7 +43,6 @@ b) Vật phẩm hỗ trợ:
 
 #### 3.1.4. Phác thảo giao diện 
 Main Menu: New Game, Continue, Quit, Nút Setting ở Góc, Background 
-![]("C:\Users\gdg75\Downloads\Ảnh chụp màn hình 2023-12-15 164423.png".jpg)
 
 User Interface: Tên Player (tên nhân vật đã đặt sẵn), Tim, Số bom 
 
