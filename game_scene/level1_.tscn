@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5mmlljon44m6"]
+
+[ext_resource type="Texture2D" uid="uid://c0bwt2ay8kaev" path="res://asset/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_fc6fo"]
+
+[node name="BasicCharakterSpritesheet" type="Sprite2D"]
+position = Vector2(253, 222)
+texture = ExtResource("1_fc6fo")
