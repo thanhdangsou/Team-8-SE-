@@ -1,3 +1,15 @@
-[gd_scene format=3 uid="uid://clgbvcdwkj1ps"]
+[gd_scene load_steps=3 format=3 uid="uid://clgbvcdwkj1ps"]
+
+[ext_resource type="PackedScene" uid="uid://dxj4dg0sigknt" path="res://interface/interface.tscn" id="1_c3o7q"]
+[ext_resource type="Texture2D" uid="uid://dgn7pplsedw3h" path="res://interface/boom-1.jpg" id="2_swwnl"]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(176, 104)
+
+[node name="interface" parent="." instance=ExtResource("1_c3o7q")]
+
+[node name="Boom-1" type="Sprite2D" parent="."]
+texture_filter = 2
+position = Vector2(399, 217.75)
+scale = Vector2(1.91333, 1.80478)
+texture = ExtResource("2_swwnl")

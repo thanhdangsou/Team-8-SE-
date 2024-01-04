@@ -1,0 +1,169 @@
+[gd_scene load_steps=7 format=3 uid="uid://cxbk04ry4pw5d"]
+
+[ext_resource type="Script" path="res://MainMenu.gd" id="1_m7vrd"]
+[ext_resource type="Texture2D" uid="uid://ckpobb5gilom8" path="res://Main Menu Boom/Bùm bùm (7).png" id="2_0c6mu"]
+[ext_resource type="FontFile" uid="uid://q1xuxfrpfrrs" path="res://Main Menu Boom/press-start-2p/PressStart2P.ttf" id="2_knflo"]
+[ext_resource type="Texture2D" uid="uid://dxfj4li1w5ac8" path="res://Main Menu Boom/Bùm_Bùm__8_-removebg-preview.png" id="3_q60w3"]
+[ext_resource type="Texture2D" uid="uid://hhwdnmcbjpvh" path="res://Main Menu Boom/Bùm_Bùm__10_-removebg-preview.png" id="4_g7n80"]
+[ext_resource type="Texture2D" uid="uid://caacb1vcwebry" path="res://Main Menu Boom/2.png" id="6_ngggg"]
+
+[node name="MainMenu" type="Control"]
+process_mode = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m7vrd")
+
+[node name="BùmBùm(7)" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(1.08679, 0.902507)
+texture = ExtResource("2_0c6mu")
+
+[node name="0_6" type="Sprite2D" parent="."]
+position = Vector2(496, 104)
+rotation = -0.261799
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_q60w3")
+
+[node name="BùmBùm8-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(576, 96)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_q60w3")
+
+[node name="BùmBùm8-removebg-preview2" type="Sprite2D" parent="."]
+position = Vector2(656, 104)
+rotation = 0.261799
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_q60w3")
+
+[node name="BùmBùm10-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(568, 224)
+texture = ExtResource("4_g7n80")
+
+[node name="Menu" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -204.0
+offset_top = -29.0
+offset_right = 204.0
+offset_bottom = 195.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="New" type="Button" parent="Menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_knflo")
+theme_override_font_sizes/font_size = 40
+text = " New Game "
+
+[node name="Options" type="Button" parent="Menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_knflo")
+theme_override_font_sizes/font_size = 40
+text = "Option"
+
+[node name="Quit" type="Button" parent="Menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_knflo")
+theme_override_font_sizes/font_size = 40
+text = "Quit
+"
+
+[node name="Audio" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="2" type="Sprite2D" parent="Audio"]
+position = Vector2(576, 324)
+scale = Vector2(1.08679, 0.902507)
+texture = ExtResource("6_ngggg")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Audio"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -305.0
+offset_top = -65.0
+offset_right = 305.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Labels" type="VBoxContainer" parent="Audio/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 40
+
+[node name="Music" type="Label" parent="Audio/HBoxContainer/Labels"]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_knflo")
+theme_override_font_sizes/font_size = 40
+text = "Music "
+
+[node name="Sound FX" type="Label" parent="Audio/HBoxContainer/Labels"]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_knflo")
+theme_override_font_sizes/font_size = 40
+text = "Sound FX "
+
+[node name="Slide" type="VBoxContainer" parent="Audio/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 40
+
+[node name="Music" type="HSlider" parent="Audio/HBoxContainer/Slide"]
+layout_mode = 2
+size_flags_vertical = 6
+size_flags_stretch_ratio = 3.77
+
+[node name="Sound FX" type="HSlider" parent="Audio/HBoxContainer/Slide"]
+layout_mode = 2
+size_flags_vertical = 2
+
+[node name="Back From Option" type="Button" parent="Audio"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -88.0
+offset_top = -96.0
+offset_right = 88.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_knflo")
+theme_override_font_sizes/font_size = 40
+text = "Back"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(572, 328)
+
+[connection signal="pressed" from="Menu/New" to="." method="_on_new_pressed"]
+[connection signal="pressed" from="Menu/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Menu/Quit" to="." method="_on_quit_pressed"]
+[connection signal="value_changed" from="Audio/HBoxContainer/Slide/Music" to="." method="_on_music_value_changed"]
+[connection signal="value_changed" from="Audio/HBoxContainer/Slide/Sound FX" to="." method="_on_sound_fx_value_changed"]
+[connection signal="pressed" from="Audio/Back From Option" to="." method="_on_back_from_option_pressed"]

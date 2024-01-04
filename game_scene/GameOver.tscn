@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx7fgjbe3c2nb"]
+
+[ext_resource type="FontFile" uid="uid://did1ektf33urh" path="res://Main Menu Boom/PressStart2P.ttf" id="1_53p42"]
+[ext_resource type="Texture2D" uid="uid://ckpobb5gilom8" path="res://Main Menu Boom/Bùm bùm (7).png" id="1_y4ae3"]
+[ext_resource type="Script" path="res://game_scene/Control.gd" id="3_j78d0"]
+
+[node name="GameOverScene" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, 323)
+scale = Vector2(3.75805, 1.77358)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 301.0
+offset_top = 178.0
+offset_right = 901.0
+offset_bottom = 228.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_53p42")
+theme_override_font_sizes/font_size = 50
+text = "PLAYER 1 WIN
+"
+
+[node name="BùmBùm(7)" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(581, 325)
+scale = Vector2(1.20742, 0.994523)
+texture = ExtResource("1_y4ae3")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_j78d0")
+
+[node name="back to main menu" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 347.0
+offset_right = 497.0
+offset_bottom = 378.0
+theme_override_fonts/font = ExtResource("1_53p42")
+theme_override_font_sizes/font_size = 20
+text = "BACK TO MAIN MENU"
+
+[node name="quit" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 804.0
+offset_top = 348.0
+offset_right = 959.0
+offset_bottom = 379.0
+theme_override_fonts/font = ExtResource("1_53p42")
+theme_override_font_sizes/font_size = 20
+text = "QUIT"
+
+[connection signal="button_down" from="Control/back to main menu" to="Control" method="_on_back_to_main_menu_button_down"]
+[connection signal="button_down" from="Control/quit" to="Control" method="_on_quit_button_down"]
